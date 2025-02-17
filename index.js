@@ -22,6 +22,6 @@ app.use("/product", productRoutes)//product routes
 connectDb()
 
 //listen
-app.listen(1000, "localhost", () => {
+app.listen(1000, () => {
     console.log("server running in http://localhost:1000");
 })

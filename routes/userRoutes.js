@@ -22,6 +22,6 @@ userRoutes.post("/login", userLogin)   //! http://localhost:1000/user/login
 userRoutes.get("/logout", userLogout)  //!http://localhost:1000/user/logout
 
 //delete user
-userRoutes.delete("/delete",)   //! http://localhost:1000/user/logout
+userRoutes.delete("/delete",)   //! http://localhost:1000/user/delete
 
 export default userRoutes;
