@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken"
+import { config } from "dotenv"
+config()
 
-const secretKey = "Vicky123456"
+const secretKey = process.env.MY_SECRET || "yourKey"
 
 //generate token function
 

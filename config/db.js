@@ -1,7 +1,8 @@
 import mongoose from "mongoose"
+import { config } from "dotenv"
+config()
 
-const dbURL = "mongodb+srv://lalatendubhatta:Np9GdyZQbuLXoiPV@mycluster.vd98y.mongodb.net/mydb?retryWrites=true&w=majority&appName=mycluster"
-
+const dbURL = process.env.DB_URL || "mongodb://127.0.0.1:27017/myDb2"
 
 //connection function
 const connectDb = async () => {
